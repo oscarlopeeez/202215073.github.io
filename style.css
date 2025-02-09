@@ -1,0 +1,38 @@
+.titulo-principal {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #00d;
+}
+
+form.formulario{
+    display: table;
+}
+
+div.formulario{
+    display: table-row;
+    padding-bottom: 20px;
+}
+
+label,
+input {
+    display: table-cell;
+    padding: 10px;
+}
+
+label{
+    padding-right: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas: "text image";
+    padding: 10px;
+}
+
+.image{grid-area: image;}
+.text{grid-area: text;}

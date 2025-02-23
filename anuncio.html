@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anuncio</title>
+</head>
+<body>
+    <h1>Detalles del Producto</h1>
+    <img id="thumbnail" src="" alt="Imagen del producto">
+    <h2 id="title"></h2>
+    <p id="description"></p>
+    <p><strong>Precio:</strong> <span id="price"></span>$</p>
+    <p><strong>Descuento:</strong> <span id="discountPercentage"></span>%</p>
+    <p><strong>Valoración:</strong> <span id="rating"></span></p>
+    <p><strong>Stock:</strong> <span id="stock"></span></p>
+    <p><strong>Marca:</strong> <span id="brand"></span></p>
+    <p><strong>Categoría:</strong> <span id="category"></span></p>
+
+<script src = scriptcaleruega.js></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const url = new URLSearchParams(window.location.search);
+    const id = url.get('id');
+      if (id) {
+          cargarProducto(id);
+        }
+  });
+</script>
+
+<div style="text-align: center; margin-top: 20px;">
+    <button onclick="location.href='index.html'">Volver a página anterior</button>
+</div>
+
+</body>
+</html>

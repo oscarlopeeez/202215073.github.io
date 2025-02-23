@@ -36,3 +36,29 @@ label{
 
 .image{grid-area: image;}
 .text{grid-area: text;}
+
+.ad {
+  align-self: center;
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ddd;
+  }
+
+.ad img {
+  width: 100%;
+  height: auto;
+}
+
+.ad h3 {
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+.ad p {
+  margin: 5px;
+  font-size: 0.9em;
+}
